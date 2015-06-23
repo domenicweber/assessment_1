@@ -12,10 +12,16 @@ class CreditCard
 
   def payment(amount)
     @balance -= amount
-    puts "You still have a balance of $#{@balance.round(2)}"
+    if @balance > 0
+      puts "You still have a balance of $#{@balance.round(2)}"
+    else
+      puts 'Thank you come again!'
+    end
   end
 end
 
-cc = CreditCard.new
-
-puts cc.charge(10)
+# Test to determine if works
+# cc = CreditCard.new
+# charged = cc.charge(10.56)
+# puts charged
+# paid = cc.payment(10.55)
