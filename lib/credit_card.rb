@@ -21,7 +21,10 @@ class CreditCard
 end
 
 # Test to determine if works
-# cc = CreditCard.new
+cc = CreditCard.new
 # charged = cc.charge(10.56)
 # puts charged
 # paid = cc.payment(10.55)
+
+charged = cc.charge(5)
+paid = cc.payment(4)
